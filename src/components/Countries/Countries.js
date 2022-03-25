@@ -12,11 +12,11 @@ const Countries = () => {
     return (
         <div>
             <h1>Hello from Countries: {countries.length }</h1>
-            {
+            {/* {
                 countries.map(country => console.log(country))
-            }
+            } */}
             {
-                countries.map(country => <Country name={country.name.common} area={country.area} population={country.population}></Country>)
+                countries.map(country => <Country country={country}></Country>)
             }
         </div>
     );
